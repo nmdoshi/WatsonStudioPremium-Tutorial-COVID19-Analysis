@@ -4,7 +4,7 @@ This lab will use the [COVID data set](https://www.kaggle.com/fireballbyedimyrnm
 
 ## Steps
 
-1. [Create Watson Studio service on IBM Cloud](#1-Create-a-Watson-Studio-service-on-IBM-Cloud)
+1. [Create Watson Studio service on IBM Cloud](#1-create-watson-studio-service-on-IBM-cloud)
 2. [Create a project in Watson Studio and upload the data](#2-create-a-project-in-Watson-Studio-and-upload-the-data)
 3. [Use the Data Refinery Tool](#3-use-the-data-refinery-tool)
     * Profile the data to help determine missing values
@@ -32,7 +32,7 @@ to understand the main functionality of the service.
 
 * Once you are satisfied with your service name, and location, and plan, click on create in the bottom-right corner. This creates your Watson Studio instance.
 
-![watsonStudio](https://media.github.ibm.com/user/79254/files/e493eb80-8626-11ea-87b5-f1c7cf8d50e0)
+![watsonStudio](../images/WatsonStudio.gif)
 
 ### 2.Create a project in Watson Studio and upload the data
 
@@ -49,7 +49,7 @@ Watson Studio instance page, which says `Welcome to Watson Studio. Let's get sta
 
 * Once you've confirmed your IBM Cloud Object Store instance, you are taken back to the project page. Click on `refresh` and you should see your newly created Cloud Object Store instance under `Storage`. That's it! Now you can click `Create` at the bottom right of the page to create your first IBM Watson Studio project :)
 
-![createProj](https://user-images.githubusercontent.com/10428517/81858932-5fab3c00-9519-11ea-9301-3f55d9e2e98d.gif)
+![createProj](../images/CloudObject.gif)
 
 * Once you have created your Watson Studio Project, you see a blue `Add to Project` button on the top-right corner of your screen.
 
