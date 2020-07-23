@@ -60,6 +60,7 @@ Watson Studio instance page, which says `Welcome to Watson Studio. Let's get sta
 * On the right-hand side bar, click on `browse` and then go to where you cloned the repository, and select `us-counties.csv`.
 
 ![addProj](../images/browse.png)
+![addProj](../images/data.png)
 
 * Once the upload has finished, you should see it under data asset of the project
 
@@ -78,11 +79,11 @@ Watson Studio instance page, which says `Welcome to Watson Studio. Let's get sta
 
 * Note that the flips column has a specific code for counties, this may vary for metro areas and should be removed as part of the data preparation step.  
 
-* Data Understanding - Click on `Vizualizations`. tab
-![refineProj](../images/visualizedata.png)
+* Data Understanding - Click on `Vizualizations`. tab to look at various charting options available within Data refinery
+![refineProj](../images/columnsvisualize.png)
 
 * Let’s take a look at the breakdown of counties and cases. Add cases and county
-![refineProj](../images/columnsvisualize.png)
+![refineProj](../images/visualizedata.png)
 
 * It will automatically pick a chart type based on columns chosen and show the chart
 ![refineProj](../images/chart.png)
@@ -91,14 +92,14 @@ Watson Studio instance page, which says `Welcome to Watson Studio. Let's get sta
 
 ![refineProj](../images/chartsize.png)
 
-* Click on `Dual Y axis`. to change the chart type.
+* Click the double arrow to select all different chart options and then click `Dual Y axis`. to change the chart type. This option gives users to visualize the data using different chart types.
 ![refineProj](../images/switchchart.png)
 
 * You can see the cases with bar and line for mean of cases
 ![refineProj](../images/dualchart.png)
 
 ### 4. Prepare the data for modeling
-Based on the data analysis, we need to do the following to prepare the data for modeling.   
+Based on the data analysis, we need to do the following to prepare the data for modeling.
 * Remove columns fips
 * Convert column type and create a new column for date
 
@@ -107,21 +108,19 @@ Based on the data analysis, we need to do the following to prepare the data for 
 
 * Convert the date column from a String to a Date. Click `Operations` click on Convert `Column type`., and then check Automatically convert column and select the type to date from the dropdown menu for date and then select `MDY`. format. Click `Apply`.
 
-![refinedata](../images/convertcolumn.png)
+![refinedata](../images/convertdate.gif)
 
-* Convert the date column from a String to a Date. Click `Operations` click the `Extract data and time value`. and then select `Month`. from the dropdown menu  Click `Apply`.
+* Click on three dots of `Reported_Date` then Click `View All` and Click the `Extract data and time value`. and then select `Month`. from the dropdown menu  check the box which states `Create new column for results` give the name `Reported_Month` and then Click `Apply`.
 
-![refinedata](../images/extractdatetime.png)
-![refinedata](../images/extractmonth.png)
+![refinedata](../images/extract_month.png)
 
 * Repeat above step to create a column for `Day`
 
-* Repeat above step to create a column for `Year`
-
 * Repeat above step to create a column for `Week`
 
+* Repeat above step to create a column for `Year`
 
-*  Notice the STEPS panel on the right-hand side that provides a running list of the data operations.  Save the Data Flow by clicking on the Save Data Flow icon.
+*  Notice the STEPS panel on the right-hand side that provides a running list of the data operations.  You should have 7 steps. Save the Data Flow by clicking on the Save Data Flow icon.
 ![refinedata](../images/saveicon.png)
 
 ### 5. Run the sequence of Data Flow operations on the entire data set.  
@@ -136,7 +135,7 @@ Based on the data analysis, we need to do the following to prepare the data for 
 
 * The asset contents are displayed below. Review to confirm that the data transformations specified have been applied to all the data.
 ![refinedataflow](../images/shaped_data_asset.png)
-![refinedataflow](../images/refinedatatable.png)
+![refinedataflow](../images/shapeddatatable.png)
 
 ## Summary
 You have completed the Lab !!!                  
