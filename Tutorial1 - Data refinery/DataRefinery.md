@@ -108,11 +108,11 @@ Based on the data analysis, we need to do the following to prepare the data for 
 
 * Convert the date column from a String to a Date. Click `Operations` click on Convert `Column type`., and then check Automatically convert column and select the type to date from the dropdown menu for date and then select `MDY`. format. Click `Apply`.
 
-![refinedata](../images/convertdate.gif)
+![refinedata](../images/ConvertDate.gif)
 
 * Click on three dots of `Reported_Date` then Click `View All` and Click the `Extract data and time value`. and then select `Month`. from the dropdown menu  check the box which states `Create new column for results` give the name `Reported_Month` and then Click `Apply`.
 
-![refinedata](../images/extract_month.png)
+![refinedata](../images/extract_month.gif)
 
 * Repeat above step to create a column for `Day`
 
