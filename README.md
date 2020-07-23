@@ -1,5 +1,4 @@
-# DSBlog
-Data Scientist Nano Degree Program
+
 
 # Business Case
 Use of advance analytics to  predict covid cases in counties and apply optimization for emergency response
@@ -8,7 +7,7 @@ As mentioned in medium article, our goal is to build an intelligent inventory an
 ## Learning objectives
 After completing this tutorial, the user will learn:
 
-* How to upload data to IBM Watson Studio and understand the data 
+* How to upload data to IBM Watson Studio and understand the data
 * How to use the SPSS tool to prepare and build predictive model within Watson Studio
 * Build Optimization model using model builder within Watson Studio
 
@@ -24,5 +23,5 @@ This tutorial assumes you have an IBM Cloud account. Go to the link below to sig
 
 Completing this tutorial should take about 60 minutes.
 
-## Blog Post 
+## Blog Post
 I have a written a blog around this use case [here](https://medium.com/@nmdoshi/rapid-response-to-covid-19-598f8984470d)
