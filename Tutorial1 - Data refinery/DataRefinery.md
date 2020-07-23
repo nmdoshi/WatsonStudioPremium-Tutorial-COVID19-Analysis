@@ -49,7 +49,7 @@ Watson Studio instance page, which says `Welcome to Watson Studio. Let's get sta
 
 * Once you've confirmed your IBM Cloud Object Store instance, you are taken back to the project page. Click on `refresh` and you should see your newly created Cloud Object Store instance under `Storage`. That's it! Now you can click `Create` at the bottom right of the page to create your first IBM Watson Studio project :)
 
-![createProj](https://user-images.githubusercontent.com/10428517/81858932-5fab3c00-9519-11ea-9301-3f55d9e2e98d.gif)
+![createProj](../images/CloudObject.gif)
 
 * Once you have created your Watson Studio Project, you see a blue `Add to Project` button on the top-right corner of your screen.
 
