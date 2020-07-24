@@ -70,29 +70,29 @@ You will also need to download and unzip the files in [Part3](https://github.com
 
 * Select all files and  Click `Open`. and import 5 input files required for building this model
 ![importProj](../images/Tutorial3-Step2-importdata-files.png)
-**Product.csv** - This file contains product information. the columns in the file as follows
-Product - name of the products
-cost - cost to procure the products
-qty_per_unit - number of product in 1 unit
-unit_of_measure - metrics
-importanceFactor - importance with respect to pandemic
-required_qty_per_person - It is amount of product needed per patient/cases
+    **Product.csv** - This file contains product information. the columns in the file as follows
+    Product - name of the products
+    cost - cost to procure the products
+    qty_per_unit - number of product in 1 unit
+    unit_of_measure - metrics
+    importanceFactor - importance with respect to pandemic
+    required_qty_per_person - It is amount of product needed per patient/cases
 
-**ProductAvailability.csv** - These file contains product that is available for entire state to be distributed to the counties.
-Product - name of the products
-Availability - Qty of units available for that time period
+    **ProductAvailability.csv** - These file contains product that is available for entire state to be distributed to the counties.
+    Product - name of the products
+    Availability - Qty of units available for that time period
 
-**County.csv** - This file is output from SPSS model where we are forecasting the number of potential cases for next 5 days
-County - name of the County
-forecasted_cases - no of forecasted new COVID cases
-forecasted_death - no of forecasted deaths
+    **County.csv** - This file is output from SPSS model where we are forecasting the number of potential cases for next 5 days
+    County - name of the County
+    forecasted_cases - no of forecasted new COVID cases
+    forecasted_death - no of forecasted deaths
 
-**CountyDemand.csv** - This is the data collected from various counties with respected to their requirement for various products
-County - name of the county
-product - name of the product
-demand - units of preoduct requested to be supplied
+    **CountyDemand.csv** - This is the data collected from various counties with respected to their requirement for various products
+    County - name of the county
+    product - name of the product
+    demand - units of preoduct requested to be supplied
 
-**AllocationParameters** - Budget allocated for the state
+    **AllocationParameters** - Budget allocated for the state
 
 * Next, import files into model builder by selecting the files. Click `Import`.
 ![importProj](../images/Tutorial3-Step2-importdataforopti.png)
@@ -110,13 +110,14 @@ For this problem we will be using Selection and Allocation domain. Selection pro
 ![runProj](../images/Tutorial3-Step3-ModelingAssistant.gif)
 
 * Define Objectives - In this step we would like to define our Objectives.
-The first thing we would like is to allocate as much product that we can to the counties. In the suggestion section one can freely write the objective in English as an natural language. We will type in `Maximize total CountyDemand allocations` and hit enter. This will then show the list of all possible suggestions related to the CountyDemand table. Click the `+` icon next to the suggested objective. You will see that the objective is moved to the left-hand side under Objectives
 
-The second objective is to make the allocation fair with respect to demand. In the suggestion box type `Balance gap between allocation  and demand over CountyDemands` look at all the suggestions and pick the one that has the objective.
+  The first thing we would like is to allocate as much product that we can to the counties. In the suggestion section one can freely write the objective in English as an natural language. We will type in `Maximize total CountyDemand allocations` and hit enter. This will then show the list of all possible suggestions related to the CountyDemand table. Click the `+` icon next to the suggested objective. You will see that the objective is moved to the left-hand side under Objectives
 
-On the left-hand side when we formulated the objective the modeling assistant had already assumed an objective called `Maximize the total CountyDemand selections`. We don't need that so we can click the three dots next to it and it shows the options. Click `Remove`
+  The second objective is to make the allocation fair with respect to demand. In the suggestion box type `Balance gap between allocation  and demand over CountyDemands` look at all the suggestions and pick the one that has the objective.
 
-[runProj](../images/Tutorial3-Step3-addObjectiveFunction.gif)
+  On the left-hand side when we formulated the objective the modeling assistant had already assumed an objective called `Maximize the total CountyDemand selections`. We don't need that so we can click the three dots next to it and it shows the options. Click `Remove`
+
+![runProj](../images/Tutorial3-Step3-addObjectiveFunction.gif)
 
 * Click on `Explore solution` on model builder and then look at the Objectives/KPI and Solutions tables link to review the output from optimization engine
 ![runmodel](../images/MBExploreKPI.png)
