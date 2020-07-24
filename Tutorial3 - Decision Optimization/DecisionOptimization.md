@@ -65,7 +65,20 @@ You will also need to download and unzip the files in [Part3](https://github.com
 * Click the `Find and add data`. icon on the top right side and click on `browse`.as shown below
 ![importProj](../images/Tutorial3-Step2-find-and-add-data.png)
 
-* Click and import all 5 input files required for building this model
+* Select all files and  Click `Open`. and import 5 input files required for building this model
+![importProj](../images/Tutorial3-Step2-importdata-files.png)
+Product.csv - This file contains product information. the columns in the file as follows
+Product - name of the products
+cost - cost to procure the products
+qty_per_unit - number of product in 1 unit
+unit_of_measure - metrics
+importanceFactor - importance with respect to pandemic
+required_qty_per_person - It is amount of product needed per patient/cases
+
+ProductAvailability.csv - These file contains product that is available for entire state to be distributed to the counties.
+Product - name of the products
+Availability - Qty of units available for that time period
+
 
 
 * Next, select `From File` and `browse` to where you cloned this repository. Select the `Base Scenario MI.zip` file. Next, click `Create`.
