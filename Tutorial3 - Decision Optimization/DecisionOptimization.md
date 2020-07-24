@@ -3,6 +3,8 @@
 ## Tutorial
 Decision Optimization adds prescriptive analytics capabilities to IBM Watson Studio and IBM Watson Machine Learning. This hands-on lab is created around a simple Marketing Campaign problem. In 45 minutes, you set up a Watson Studio project and go through all the necessary steps to use Decision Optimization for Watson Studio and Decision Optimization for Watson Machine Learning.
 
+In the previous 2 Tutorials we used the COVID-19 dataset to refine and predict cases using SPSS visual model building interface.Based on predictive model counties and Michgan need to be prepared and will require PPE for hospitals.
+
 In this tutorial, you will explore the following key capabilities:
  * You will learn how to build Optimization model
  * A model builder to guide developers through the typical optimization development steps
@@ -10,14 +12,14 @@ In this tutorial, you will explore the following key capabilities:
 
 Required software, access, and files
 To complete this lab, you will need:
-• Watson Studio Cloud
+• IBM Cloud Pak for Data
 
 You will also need to download and unzip the files in [Part3](https://github.com/neravdoshi/DSBlog/tree/master/Part3)
 
 ## Step
 
 1. [Add a Decision Optimization to your Watson Studio Project](#1-Add-a-decision-optimization-to-your-watson-studio-project)
-2. [Import the scenario and review data](#2-import-the-scenario-and-review-data)
+2. [Import the data required to build the model](#2-import-the-scenario-and-review-data)
 3. [Run modle and analyze results](#3-run-model-and-analyze-results)
 
 ### 1. Add a Decision Optimization to your Watson Studio Project
