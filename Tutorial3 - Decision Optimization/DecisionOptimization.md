@@ -57,12 +57,12 @@ You will also need to download and unzip the files in [Part3](https://github.com
 
 * Once you have created your Watson Studio Project, you see a blue `Add to Project` button on the top-right corner of your screen.
 
-![addProj](../images/Tutorial3-Step1-newDOproject.png)
+![addProj](../images/Tutorial3-Step1-Addtoproject.png)
 
-* Click on `Add to Project` and then select `Decision Optimization Experiments`.Select Watson Machine Learning service from the dropdown menu.Note: If Watson Machine Learning service is not available then create a service using Lite plan
+* Click the `Decision Optimization Experiments`.Select Watson Machine Learning service from the dropdown menu.Note: If Watson Machine Learning service is not available then create a service using Lite plan
 
 ![addProj](../images/Tutorial3-Step1-DOservice.png)
-![addProj](../images/addWMLservice.png)
+![addProj](../images/Tutorial3-Step1-newDOproject.png)
 
 ### 2. Import the data required to build the model
 * Click the `Find and add data`. icon on the top right side and click on `browse`.as shown below
