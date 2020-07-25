@@ -47,7 +47,7 @@ You will also need to download and unzip the files in [Part3](https://github.com
 4. [Explore other options](#-explore-other-options)
 5. [Run the model](#-run-the-model)
 6. [Explore solution](#-explore-solution)
-7. [Create a new scenario - different model, same data]
+7. [Create a new scenario - different model, same data](#-create-a-new-scenario-different-model-same-data)
 8. [Visualization within model builder](#-visualization-within-model-builder)
 
 ### 1. Add a Decision Optimization to your Watson Studio Project
