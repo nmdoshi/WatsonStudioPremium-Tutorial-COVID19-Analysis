@@ -44,11 +44,11 @@ You will also need to download and unzip the files in [Part3](https://github.com
 1. [Add a Decision Optimization to your Watson Studio Project](#1-Add-a-decision-optimization-to-your-watson-studio-project)
 2. [Import the data required to build the model](#2-import-the-data-required-to-build-the-model)
 3. [Run models and analyze results](#3-run-model-and-analyze-results)
-4. [Explore other options](#-explore-other-options)
-5. [Run the model](#-run-the-model)
-6. [Explore solution](#-explore-solution)
-7. [Create a new scenario - different model, same data](#-create-a-new-scenario-different-model-same-data)
-8. [Visualization within model builder](#-visualization-within-model-builder)
+4. [Explore other options](#4-explore-other-options)
+5. [Run the model](#5-run-the-model)
+6. [Explore solution](#6-explore-solution)
+7. [Create a new scenario - different model, same data](#7-create-a-new-scenario-different-model-same-data)
+8. [Visualization within model builder](#8-visualization-within-model-builder)
 
 ### 1. Add a Decision Optimization to your Watson Studio Project
 
