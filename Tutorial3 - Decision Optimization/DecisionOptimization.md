@@ -47,6 +47,8 @@ You will also need to download and unzip the files in [Part3](https://github.com
 4. [Explore other options](#-explore-other-options)
 5. [Run the model](#-run-the-model)
 6. [Explore solution](#-explore-solution)
+7. [Create a new scenario - different model, same data]
+8. [Visualization within model builder](#-visualization-within-model-builder)
 
 ### 1. Add a Decision Optimization to your Watson Studio Project
 
@@ -108,7 +110,7 @@ For this problem we will be using Selection and Allocation domain. Selection pro
 * Click `Selection & Allocation` domain and it asks series of questions. It needs to understand which table to select the data. The first question asked is `What are the items (or combinations) to select from?` Click on `Choose a table` drop down menu and select `CountyDemand` table. The next question is around allocation. The modeling assistant needs to understand if this is just a selection problem or it is combination of selection and allocation. The question asked is `How do you want the selection to be made ?` Turn the toggle on to allocate quantities and Click `Continue`. This will now frame the modeling problem automatically. You will see a screen that shows `Select and allocate CountyDemands.` Click `Finish`
 ![runProj](../images/Tutorial3-Step3-ModelingAssistant.gif)
 
-* ***Define Objectives*** - In this step we would like to define our Objectives.
+* **Define Objectives** - In this step we would like to define our Objectives.
 
   **Objective 1**
 
@@ -124,7 +126,7 @@ For this problem we will be using Selection and Allocation domain. Selection pro
 
 ![runProj](../images/Tutorial3-Step3-addObjectiveFunction.gif)
 
-* ***Define constraints***
+* **Define constraints**
 
   There are 3 constraints that we need to add
 
@@ -135,7 +137,7 @@ For this problem we will be using Selection and Allocation domain. Selection pro
     Allocation of quantities need to be less the requested demand by counties. To do so we will type `For each CountyDemand , allocation  is less than or equal to  demand` in suggestions section. Click the `+` icon to add to the models
 
   **Constraint 3**  
-    Overall budget for entire state is limited and allocation needs to be below budget. To do so we will type `total CountyDemand allocations  is less than or equal to  max_budget of AllocationParameters ` in suggestions section. Click the `+` icon to add to the models
+    Overall budget for entire state is limited and allocation needs to be below allocated budget(in total units). To do so we will type `total CountyDemand allocations  is less than or equal to  max_budget of AllocationParameters ` in suggestions section. Click the `+` icon to add to the models
 
 ![runProj](../images/Tutorial3-Step3-Constraints.gif)
 
@@ -165,22 +167,45 @@ Click `Run model` on the top. Combined Objective is displayed in this run status
 
 ![runmodel](../images/Tutorial3-Step6-explore-solution.png)
 
-* Click `Visualization` to build a dashboard.
-![runmodel](../images/DOvisualization.png)
-![runmodel](../images/DOsolution.png)
-![runmodel](../images/DOproductionchart.png)
+### 7. Create a new scenario - different model, same data
 
+* Although you have solved the model in reality we need the units based on importance of products needed. For example ventilators and masks have a high importance and is needed first to save lives. We need to readjust the model to reflect the reality and maximize allocation based on importanceFactor
+
+Create a new scenario in the model from scenario 1. Click the Scenario button on top of the page and scenario panel opens on the side. You will see Scenario 1 on it you will notice three dots, Click on it to see the drop down menu. Click the `Duplicate` and you will be prompted to give a name of new scenario. Type `Baseline with Importance` Click `Create`
+
+![newscenario](../images/Tutorial3-Step7-duplicate-scenario.png)
+![newscenario](../images/Tutorial3-Step7-duplicate-scenario-name.png)
+
+
+* Click Run Model on left-hand side and it will show the modeling assistant model. In the suggestions type `Maximize total importanceFactor of product of CountyDemand of allocation ` Click the `+` icon to add the objective to the model. You can use the slider to give this objective  more importance.
+
+![newscenario](../images/Tutorial3-Step7-importance-objective.png)
+![newscenario](../images/Tutorial3-Step7-importance-objective-slider.png)
+
+Click `Run Model` and look at the solution in `Explore Solution` on left-hand-side
+
+Click the Scenario button on top of the page and scenario panel opens on the side. You will see Scenario 1 on it you will notice three dots, Click on it to see the drop down menu. Click the `Rename` and you will be prompted to give a name of new scenario. Type `Baseline`
+
+
+### 8. Visualization within model builder
+
+* Click `Visualization` to build a dashboard.Click pencil icon to open visualization editor. Click `Json` and delete the content.
+![visualization](../images/Tutorial3-Step8-visualization.png)
+![visualization](../images/Tutorial3-Step8-visualization-pencil.png)
+![visualization](../images/Tutorial3-Step8-visualization-json.png)
+
+Open the [visualization.json file](../Tutorial3 - Decision Optimization/data/). Copy the contents and paste in the Json editor
+You should see the following Dashboard
+![visualization](../images/Tutorial3-Step8-visualization-dashboard.png)
+
+### 9. Generating a Python notebook from your scenario
+
+* If you want to generate a Python notebook from your model created with the Modeling Assistant:
+  * If the scenario panel is not open, click the `Scenarios` icon.
+  * Click the three dots next to one of your scenarios and select `Generate` notebook.
+  * Enter a name for your notebook and click Generate.
+  * A Python notebook for this model is created in your Project.
 
 ### Summary
 
-This tutorial demonstrates a small example of creating a prescriptive optimization model on IBM Decision Optimization on Watson Studio(CPLEX engine). The tutorial goes over on importing the scenario into the project and running the model. The last step of the tutorial is about how to visualize and evaluate the results. You can see the total production required to meet demand. Based on cases you can allocate certain PPE equipemnt to counties that have high number of COVID cases.
-
-
-* Next, select `From File` and `browse` to where you cloned this repository. Select the `Base Scenario MI.zip` file. Next, click `Create`.
-
-![importProj](../images/DOScenariofile.png)
-
-* Click `Visualization` to review the pre-populated dashboard.
-![runmodel](../images/DOvisualization.png)
-![runmodel](../images/DOsolution.png)
-![runmodel](../images/DOproductionchart.png)
+This tutorial demonstrates a small example of creating a prescriptive optimization model on IBM Decision Optimization on Watson Studio(CPLEX engine). The tutorial goes over on importing the scenario into the project and running the model. The last step of the tutorial is about how to visualize and evaluate the results.
