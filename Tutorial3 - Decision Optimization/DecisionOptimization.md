@@ -47,7 +47,7 @@ You will also need to download and unzip the files in [Part3](https://github.com
 4. [Explore other options](#4-explore-other-options)
 5. [Run the model](#5-run-the-model)
 6. [Explore solution](#6-explore-solution)
-7. [Create a new scenario - different model, same data](#7-create-a-new-scenario-different-model-same-data)
+7. [Create a new scenario different model same data](#7-create-a-new-scenario-different-model-same-data)
 8. [Visualization within model builder](#8-visualization-within-model-builder)
 
 ### 1. Add a Decision Optimization to your Watson Studio Project
@@ -167,7 +167,7 @@ Click `Run model` on the top. Combined Objective is displayed in this run status
 
 ![runmodel](../images/Tutorial3-Step6-explore-solution.png)
 
-### 7. Create a new scenario - different model, same data
+### 7. Create a new scenario different model same data
 
 * Although you have solved the model in reality we need the units based on importance of products needed. For example ventilators and masks have a high importance and is needed first to save lives. We need to readjust the model to reflect the reality and maximize allocation based on importanceFactor
 
