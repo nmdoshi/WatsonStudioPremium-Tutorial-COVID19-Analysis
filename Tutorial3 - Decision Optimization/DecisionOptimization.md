@@ -103,12 +103,12 @@ There are different decision domains currently available in the Modeling Assista
 
 For this problem we will be using Selection and Allocation domain. Selection problems are about choosing from a list of possibilities. You can use the Selection and Allocation domain when you have combined all the possible choices. We would like to select the products(which are resources) for this model that we can allocate to counties.
 
-##Selection & Allocation domain##
+**Selection & Allocation domain**
 
 * Click `Selection & Allocation` domain and it asks series of questions. It needs to understand which table to select the data. The first question asked is `What are the items (or combinations) to select from?` Click on `Choose a table` drop down menu and select `CountyDemand` table. The next question is around allocation. The modeling assistant needs to understand if this is just a selection problem or it is combination of selection and allocation. The question asked is `How do you want the selection to be made ?` Turn the toggle on to allocate quantities and Click `Continue`. This will now frame the modeling problem automatically. You will see a screen that shows `Select and allocate CountyDemands.` Click `Finish`
 ![runProj](../images/Tutorial3-Step3-ModelingAssistant.gif)
 
-* ###Define Objectives### - In this step we would like to define our Objectives.
+* ***Define Objectives*** - In this step we would like to define our Objectives.
 
   **Objective 1**
 
@@ -124,7 +124,7 @@ For this problem we will be using Selection and Allocation domain. Selection pro
 
 ![runProj](../images/Tutorial3-Step3-addObjectiveFunction.gif)
 
-* Define constraints
+* ***Define constraints***
 
   There are 3 constraints that we need to add
 
