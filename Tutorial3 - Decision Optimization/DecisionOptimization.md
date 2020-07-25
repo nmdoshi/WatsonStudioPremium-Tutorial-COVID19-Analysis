@@ -194,7 +194,7 @@ Click the Scenario button on top of the page and scenario panel opens on the sid
 ![visualization](../images/Tutorial3-Step8-visualization-pencil.png)
 ![visualization](../images/Tutorial3-Step8-visualization-json.png)
 
-Open the [visualization.json file](../Tutorial3 - Decision Optimization/data/). Copy the contents and paste in the Json editor
+Open the [visualization.json file](https://github.com/nmdoshi/WatsonStudio-Tutorial-COVID19-Analysis/blob/master/Tutorial3%20-%20Decision%20Optimization/data/visualization.json). Copy the contents and paste in the Json editor
 You should see the following Dashboard
 ![visualization](../images/Tutorial3-Step8-visualization-dashboard.png)
 
