@@ -103,19 +103,23 @@ There are different decision domains currently available in the Modeling Assista
 
 For this problem we will be using Selection and Allocation domain. Selection problems are about choosing from a list of possibilities. You can use the Selection and Allocation domain when you have combined all the possible choices. We would like to select the products(which are resources) for this model that we can allocate to counties.
 
+##Selection & Allocation domain##
+
 * Click `Selection & Allocation` domain and it asks series of questions. It needs to understand which table to select the data. The first question asked is `What are the items (or combinations) to select from?` Click on `Choose a table` drop down menu and select `CountyDemand` table. The next question is around allocation. The modeling assistant needs to understand if this is just a selection problem or it is combination of selection and allocation. The question asked is `How do you want the selection to be made ?` Turn the toggle on to allocate quantities and Click `Continue`. This will now frame the modeling problem automatically. You will see a screen that shows `Select and allocate CountyDemands.` Click `Finish`
 ![runProj](../images/Tutorial3-Step3-ModelingAssistant.gif)
 
-* Define Objectives - In this step we would like to define our Objectives.
+* ###Define Objectives### - In this step we would like to define our Objectives.
 
-  The first thing we would like is to allocate as much product that we can to the counties.
   **Objective 1**
-    In the suggestion section one can freely write the objective in English as an natural language. We will type in `Maximize total CountyDemand allocations` and hit enter. This will then show the list of all possible suggestions related to the CountyDemand table. Click the `+` icon next to the suggested objective. You will see that the objective is moved to the left-hand side under Objectives
+
+      The first thing we would like is to allocate as much product that we can to the counties. In the suggestion section one can freely write the objective in English as an natural language. We will type in `Maximize total CountyDemand allocations` and hit enter. This will then show the list of all possible suggestions related to the CountyDemand table. Click the `+` icon next to the suggested objective. You will see that the objective is moved to the left-hand side under Objectives
 
   **Objective 2**
+
     The second objective is to make the allocation fair with respect to demand. In the suggestion box type `Balance gap between allocation  and demand over CountyDemands` look at all the suggestions and pick the one that has the objective.
 
   **Remove Objective**
+
     On the left-hand side when we formulated the objective the modeling assistant had already assumed an objective called `Maximize the total CountyDemand selections`. We don't need that so we can click the three dots next to it and it shows the options. Click `Remove`
 
 ![runProj](../images/Tutorial3-Step3-addObjectiveFunction.gif)
@@ -146,14 +150,14 @@ For this problem we will be using Selection and Allocation domain. Selection pro
 
     The Data Schema tab view lists, table by table, all information that the Modeling Assistant has imported and deduced from the input data that is necessary for the scheduling problem to be solved. This can be useful for expert users for data debugging purposes.
 
-![runProj](../images/Tutorial3-Step3-Otheroptions.gif)
+![runProj](../images/Tutorial3-Step4-Otheroptions.gif)
 
 ### 5. Run the model
 You can change the solve time limit for your model in the model view in the Settings tab on the right. For this example, use the default limit. Other parameters can also be set using run configuration parameters (see [Run parameters](https://www.ibm.com/support/producthub/icpdata/docs/content/SSQNUZ_current/do/DODS_RunParameters/runparams.html#RunConfig) for more information).
 
 Click `Run model` on the top. Combined Objective is displayed in this run status pop-up window. If you want to end this run before the optimal solution is obtained, you can quit by clicking Stop
 
-[runProj](../images/Tutorial3-Step5-Run-model.png)
+![runProj](../images/Tutorial3-Step5-Run-model.png)
 
 ### 6. Explore solution
 
@@ -161,7 +165,7 @@ Click `Run model` on the top. Combined Objective is displayed in this run status
 
 ![runmodel](../images/Tutorial3-Step6-explore-solution.png)
 
-* Click `Visualization` to build a dashboard. 
+* Click `Visualization` to build a dashboard.
 ![runmodel](../images/DOvisualization.png)
 ![runmodel](../images/DOsolution.png)
 ![runmodel](../images/DOproductionchart.png)
