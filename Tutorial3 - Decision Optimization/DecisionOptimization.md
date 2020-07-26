@@ -44,11 +44,11 @@ You will also need to download and unzip the files in [Part3](https://github.com
 1. [Add a Decision Optimization to your Watson Studio Project](#1-Add-a-decision-optimization-to-your-watson-studio-project)
 2. [Import the data required to build the model](#2-import-the-data-required-to-build-the-model)
 3. [Run models and analyze results](#3-run-model-and-analyze-results)
-4. [Explore other options](#-explore-other-options)
-5. [Run the model](#-run-the-model)
-6. [Explore solution](#-explore-solution)
-7. [Create a new scenario - different model, same data]
-8. [Visualization within model builder](#-visualization-within-model-builder)
+4. [Explore other options](#4-explore-other-options)
+5. [Run the model](#5-run-the-model)
+6. [Explore solution](#6-explore-solution)
+7. [Create a new scenario different model same data](#7-create-a-new-scenario-different-model-same-data)
+8. [Visualization within model builder](#8-visualization-within-model-builder)
 
 ### 1. Add a Decision Optimization to your Watson Studio Project
 
@@ -167,7 +167,7 @@ Click `Run model` on the top. Combined Objective is displayed in this run status
 
 ![runmodel](../images/Tutorial3-Step6-explore-solution.png)
 
-### 7. Create a new scenario - different model, same data
+### 7. Create a new scenario different model same data
 
 * Although you have solved the model in reality we need the units based on importance of products needed. For example ventilators and masks have a high importance and is needed first to save lives. We need to readjust the model to reflect the reality and maximize allocation based on importanceFactor
 
@@ -194,7 +194,7 @@ Click the Scenario button on top of the page and scenario panel opens on the sid
 ![visualization](../images/Tutorial3-Step8-visualization-pencil.png)
 ![visualization](../images/Tutorial3-Step8-visualization-json.png)
 
-Open the [visualization.json file](../Tutorial3 - Decision Optimization/data/). Copy the contents and paste in the Json editor
+Open the [visualization.json file](https://github.com/nmdoshi/WatsonStudio-Tutorial-COVID19-Analysis/blob/master/Tutorial3%20-%20Decision%20Optimization/data/visualization.json). Copy the contents and paste in the Json editor
 You should see the following Dashboard
 ![visualization](../images/Tutorial3-Step8-visualization-dashboard.png)
 
