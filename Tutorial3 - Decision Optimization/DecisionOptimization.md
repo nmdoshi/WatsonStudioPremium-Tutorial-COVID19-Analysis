@@ -69,7 +69,7 @@ You will also need to download and unzip the files in [data folder](https://gith
 
 * Select all files and  Click `Open`. and import 5 input files required for building this model. The data can be found in [data](https://github.com/nmdoshi/WatsonStudio-Tutorial-COVID19-Analysis/tree/master/Tutorial3%20-%20Decision%20Optimization/data) folder of the github repo
 
-![importProj](../images/Tutorial3-Step2-importdata-files.png)
+![importProj](../images/Tutorial3-Step2-Importdata-files.png)
     **Product.csv** - This file contains product information. the columns in the file as follows
     Product - name of the products
     cost - cost to procure the products
