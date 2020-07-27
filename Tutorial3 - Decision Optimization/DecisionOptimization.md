@@ -210,6 +210,9 @@ You should see the following Dashboard
 
 ![notebook_generation](../images/Tutorial3-Step9-generate-notebook.png)
 
+### 10. Additional examples for different domains
+* Download and unzip the DO-samples from the [Decision Optimization GitHub](https://github.com/IBMDecisionOptimization/DO-Samples/tree/watson_studio_cloud) on to your machine.
+
 ### Summary
 
 This tutorial demonstrates a small example of creating a prescriptive optimization model on IBM Decision Optimization on Watson Studio(CPLEX engine). The tutorial goes over on importing the scenario into the project and running the model. The last step of the tutorial is about how to visualize and evaluate the results.
