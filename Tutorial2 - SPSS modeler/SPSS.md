@@ -103,16 +103,17 @@ prepared in the previous steps. In the Model section select 5 days as we need to
 
 ### 5. Evaluate the results
 
-* Double-click on `County vs $TS-cases` in the Outputs tab.
+* Click the `Scatter` in the Outputs tab.
 You can see project number of cases by counties for next 5 days is ploted. This is based on historical recorded training period i.e. 2020 daily data.
 
-![addProj](../images/10fields.png)
+![addProj](../images/Tutorial2-Step5-openchart.png)
+![addProj](../images/Tutorial2-Step5-chart.png)
 
 * Right-click on golden node `cases & death` in the stream.
 Here you will see model details, modeling method and metrics for each county
 charts.
 
-![addProj](../images/29fields.png)
+![addProj](../images/Tutorial2-Step5-viewmodel.png)
 ![addProj](../images/timeseries.png)
 
 ### Summary
