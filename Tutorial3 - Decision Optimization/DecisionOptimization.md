@@ -42,13 +42,21 @@ You will also need to download and unzip the files in [data folder](https://gith
 ## Step
 
 1. [Add a Decision Optimization to your Watson Studio Project](#1-Add-a-decision-optimization-to-your-watson-studio-project)
+
 2. [Import the data required to build the model](#2-import-the-data-required-to-build-the-model)
+
 3. [Run models and analyze results](#3-run-model-and-analyze-results)
+
 4. [Explore other options](#4-explore-other-options)
+
 5. [Run the model](#5-run-the-model)
+
 6. [Explore solution](#6-explore-solution)
+
 7. [Create a new scenario different model same data](#7-create-a-new-scenario-different-model-same-data)
+
 8. [Visualization within model builder](#8-visualization-within-model-builder)
+
 9. [Generating a Python notebook from your scenario](#9-generating-a-python-notebook-from-your-scenario)
 
 10.[Additional examples for different domains](#10-additional-examples-for-different-domains)
