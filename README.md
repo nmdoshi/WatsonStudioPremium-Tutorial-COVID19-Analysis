@@ -15,7 +15,7 @@ After completing this tutorial, the user will learn:
 This tutorial assumes you have an IBM Cloud account. Go to the link below to sign up for a no-charge trial account - no credit card required.
   - [IBM Cloud account](https://tinyurl.com/y4mzxow5)
 
-## Tutorial
+## Tutorials
 
 ### Part1 - Data collection and Understanding
 ### Part2 - SPSS stream creation and predicting PPE equipment requirement
