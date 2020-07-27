@@ -1,0 +1,442 @@
+{
+  "name": "Dashboard",
+  "locked": false,
+  "filter": "",
+  "activePage": 0,
+  "pages": [
+    {
+      "id": "b4b7fba1-a8fa-4999-b194-009fefbee601",
+      "name": "Input data",
+      "filter": "",
+      "widgets": {
+        "37e84614-822f-4527-bcbe-f31f52e382ef": {
+          "name": "",
+          "type": "Chart",
+          "props": {
+            "container": "",
+            "data": "Product",
+            "spec": {
+              "mark": "bar",
+              "encoding": {
+                "x": {
+                  "field": "product",
+                  "type": "nominal"
+                },
+                "y": {
+                  "field": "importanceFactor",
+                  "type": "quantitative"
+                },
+                "color": {
+                  "field": "importanceFactor",
+                  "type": "quantitative"
+                }
+              },
+              "config": {
+                "overlay": {
+                  "line": true
+                },
+                "scale": {
+                  "useUnaggregatedDomain": true
+                }
+              }
+            },
+            "search": ""
+          }
+        },
+        "41b26e1f-ec7a-45ff-9b21-539366f4b288": {
+          "name": "",
+          "type": "ECharts",
+          "props": {
+            "container": "",
+            "data": "CountyDemand",
+            "spec": {
+              "editor": false,
+              "width": "100%",
+              "height": "100%",
+              "padding": 0,
+              "theme": "ibm_shaper",
+              "chartSettings": {
+                "type": "sunburst",
+                "title": " ",
+                "subtitle": "",
+                "footnote": "",
+                "seriesFields": [
+                  "product"
+                ],
+                "sunburst_summaryMethod": "count",
+                "treemap_summaryMethod": "sum",
+                "tree_summaryMethod": "count",
+                "valuesField": "demand",
+                "treeStyle": "treemap",
+                "leafDepth": 1,
+                "treeOrient": "LR",
+                "sunburstLayout": "divergent",
+                "isShowleaveslabel": true,
+                "filterNullValue": false,
+                "theme": "ibm_shaper",
+                "zoomSlider": false,
+                "mouseTracker": false,
+                "gridLines": true,
+                "showToolbox": true,
+                "showARIA": false
+              },
+              "showValueLabels": false,
+              "usedFields": [
+                "product",
+                "demand"
+              ]
+            },
+            "search": ""
+          }
+        }
+      },
+      "layouts": {
+        "SM": [
+          {
+            "i": "37e84614-822f-4527-bcbe-f31f52e382ef",
+            "x": 0,
+            "y": 0,
+            "w": 1,
+            "h": 2,
+            "moved": false,
+            "static": false
+          },
+          {
+            "i": "41b26e1f-ec7a-45ff-9b21-539366f4b288",
+            "x": 0,
+            "y": 2,
+            "w": 1,
+            "h": 4,
+            "moved": false,
+            "static": false
+          }
+        ],
+        "MD": [
+          {
+            "w": 3,
+            "h": 3,
+            "x": 0,
+            "y": 0,
+            "i": "37e84614-822f-4527-bcbe-f31f52e382ef",
+            "moved": false,
+            "static": false
+          },
+          {
+            "w": 3,
+            "h": 5,
+            "x": 0,
+            "y": 3,
+            "i": "41b26e1f-ec7a-45ff-9b21-539366f4b288",
+            "moved": false,
+            "static": false
+          }
+        ],
+        "LG": [
+          {
+            "i": "37e84614-822f-4527-bcbe-f31f52e382ef",
+            "x": 0,
+            "y": 0,
+            "w": 2,
+            "h": 2,
+            "moved": false,
+            "static": false
+          },
+          {
+            "i": "41b26e1f-ec7a-45ff-9b21-539366f4b288",
+            "x": 2,
+            "y": 0,
+            "w": 4,
+            "h": 4,
+            "moved": false,
+            "static": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "3cbce40a-16de-4dec-a427-1525b91c8020",
+      "name": "Solution",
+      "filter": "",
+      "widgets": {
+        "f5bc3e6e-7ef0-49e4-88c1-c33c261ef92e": {
+          "name": "",
+          "type": "Table",
+          "props": {
+            "container": "",
+            "data": "kpis",
+            "spec": {
+              "numbered": true,
+              "compact": true,
+              "columnExpand": true,
+              "columnShrink": false,
+              "columnWidth": 0,
+              "sortOrder": [],
+              "columns": [
+                {
+                  "property": "Name",
+                  "label": "Name",
+                  "type": "String",
+                  "visible": true,
+                  "width": 0,
+                  "style": {}
+                },
+                {
+                  "property": "Value",
+                  "label": "Value",
+                  "type": "Number",
+                  "visible": true,
+                  "width": 0,
+                  "style": {}
+                },
+                {
+                  "property": "Slider",
+                  "label": "Slider",
+                  "type": "Number",
+                  "visible": true,
+                  "width": 0,
+                  "style": {}
+                },
+                {
+                  "property": "Weight factor",
+                  "label": "Weight factor",
+                  "type": "Number",
+                  "visible": true,
+                  "width": 0,
+                  "style": {}
+                },
+                {
+                  "property": "Scale factor",
+                  "label": "Scale factor",
+                  "type": "Number",
+                  "visible": true,
+                  "width": 0,
+                  "style": {}
+                },
+                {
+                  "property": "Scaled weighted value",
+                  "label": "Scaled weighted value",
+                  "type": "Number",
+                  "visible": true,
+                  "width": 0,
+                  "style": {}
+                }
+              ]
+            },
+            "search": ""
+          }
+        },
+        "14bfb26a-c934-4580-8ffb-2ce59eb92776": {
+          "name": "",
+          "type": "ECharts",
+          "props": {
+            "container": "",
+            "data": "CountyDemand_allocation_solution",
+            "spec": {
+              "editor": false,
+              "width": "100%",
+              "height": "100%",
+              "padding": 0,
+              "theme": "ibm_shaper",
+              "chartSettings": {
+                "type": "bar",
+                "categoriesField": "CountyDemand product",
+                "categoriesOrder": "asc",
+                "summaryMethod": "sum",
+                "valuesField": "CountyDemand allocation decision",
+                "splitField": "",
+                "footnote": "",
+                "orderBasis": "name",
+                "splitType": "clustered",
+                "barTranspose": false,
+                "barStyle": "transpose",
+                "theme": "ibm_shaper",
+                "selected": {},
+                "filterNullValue": false,
+                "title": " ",
+                "subtitle": "",
+                "mouseTracker": false,
+                "zoomSlider": false,
+                "gridLines": true,
+                "showToolbox": true,
+                "showARIA": false
+              },
+              "showValueLabels": false,
+              "usedFields": [
+                "CountyDemand product",
+                "CountyDemand allocation decision"
+              ]
+            },
+            "search": ""
+          }
+        }
+      },
+      "layouts": {
+        "SM": [
+          {
+            "i": "f5bc3e6e-7ef0-49e4-88c1-c33c261ef92e",
+            "x": 0,
+            "y": 0,
+            "w": 1,
+            "h": 2,
+            "moved": false,
+            "static": false
+          },
+          {
+            "i": "14bfb26a-c934-4580-8ffb-2ce59eb92776",
+            "x": 0,
+            "y": 2,
+            "w": 1,
+            "h": 4,
+            "moved": false,
+            "static": false
+          }
+        ],
+        "MD": [
+          {
+            "i": "f5bc3e6e-7ef0-49e4-88c1-c33c261ef92e",
+            "x": 0,
+            "y": 0,
+            "w": 3,
+            "h": 2,
+            "moved": false,
+            "static": false
+          },
+          {
+            "w": 3,
+            "h": 7,
+            "x": 0,
+            "y": 2,
+            "i": "14bfb26a-c934-4580-8ffb-2ce59eb92776",
+            "moved": false,
+            "static": false
+          }
+        ],
+        "LG": [
+          {
+            "i": "f5bc3e6e-7ef0-49e4-88c1-c33c261ef92e",
+            "x": 0,
+            "y": 0,
+            "w": 6,
+            "h": 2,
+            "moved": false,
+            "static": false
+          },
+          {
+            "i": "14bfb26a-c934-4580-8ffb-2ce59eb92776",
+            "x": 0,
+            "y": 2,
+            "w": 4,
+            "h": 4,
+            "moved": false,
+            "static": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "8bde9340-6459-4dc1-b7fb-b9d2dfd53fcb",
+      "name": "Scenario Comparison",
+      "filter": "",
+      "widgets": {
+        "dbc55a85-5063-4bc7-ad2c-452fbec88641": {
+          "name": "",
+          "type": "ECharts",
+          "props": {
+            "container": "*",
+            "data": "CountyDemand_allocation_solution",
+            "spec": {
+              "editor": false,
+              "width": "100%",
+              "height": "100%",
+              "padding": 0,
+              "theme": "ibm_shaper",
+              "chartSettings": {
+                "type": "bar",
+                "categoriesField": "CountyDemand product",
+                "categoriesOrder": "asc",
+                "summaryMethod": "sum",
+                "valuesField": "CountyDemand allocation decision",
+                "splitField": "@ Scenario",
+                "footnote": "",
+                "orderBasis": "name",
+                "splitType": "clustered",
+                "barTranspose": false,
+                "barStyle": "normal",
+                "theme": "ibm_shaper",
+                "filterNullValue": false,
+                "title": " ",
+                "subtitle": "",
+                "mouseTracker": false,
+                "zoomSlider": false,
+                "gridLines": true,
+                "showToolbox": true,
+                "showARIA": false
+              },
+              "showValueLabels": false,
+              "usedFields": [
+                "CountyDemand product",
+                "@ Scenario",
+                "CountyDemand allocation decision"
+              ]
+            },
+            "search": ""
+          }
+        }
+      },
+      "layouts": {
+        "SM": [
+          {
+            "i": "dbc55a85-5063-4bc7-ad2c-452fbec88641",
+            "x": 0,
+            "y": 0,
+            "w": 1,
+            "h": 4,
+            "moved": false,
+            "static": false
+          }
+        ],
+        "MD": [
+          {
+            "w": 3,
+            "h": 4,
+            "x": 0,
+            "y": 0,
+            "i": "dbc55a85-5063-4bc7-ad2c-452fbec88641",
+            "moved": false,
+            "static": false
+          }
+        ],
+        "LG": [
+          {
+            "w": 6,
+            "h": 4,
+            "x": 0,
+            "y": 0,
+            "i": "dbc55a85-5063-4bc7-ad2c-452fbec88641",
+            "moved": false,
+            "static": false
+          }
+        ]
+      }
+    }
+  ],
+  "breakpoints": [
+    {
+      "name": "SM",
+      "width": 0,
+      "columns": 1
+    },
+    {
+      "name": "MD",
+      "width": 480,
+      "columns": 3
+    },
+    {
+      "name": "LG",
+      "width": 960,
+      "columns": 6
+    }
+  ],
+  "rowHeight": 120,
+  "extensions": []
+}

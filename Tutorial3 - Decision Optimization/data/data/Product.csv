@@ -1,0 +1,29 @@
+product,cost,qty_per_unit,unit_of_measurment,importanceFactor,required _qty_per_person
+Alcohol-based hand rub,11.95,16,FL OZ,0.25,0.5
+BioHazard Liner bags 2gallon,14.95,210,bags,0.25,0.005
+BioHazard Liner bags 44gallon,16.95,20,bags,0.2,0.1
+Blue Solied Linen bags,23.95,25,bags,0.2,0.08
+Disposable foot covers,13.99,100,units,0.5,0.05
+Face shield,37.99,3,units,0.75,0.3
+Gloves,8.99,100,units,0.75,0.1
+Goggles protective,24.99,1,units,0.75,1
+Gown protective,38.98,10,units,0.75,1
+InvasiveVentilators,"30,000.00",1,units,1,0.3
+IV Catheters,39.99,20,units,1,1
+Lab extraction kit,15,1,kit,1,1
+Lab screening test kit,50,1,kit,1,1
+Liquid soap,12.95,16,FL OZ,0.5,0.5
+M4 viral media,100.00,50,kit,1,1
+Mask medical,160.00,20,units,1,1
+Nasal testing swabs,200.00,1,kit,1,1
+Needles,12.99,100,box,1,0.05
+Non contact infrared Thermometer,54.99,1,units,1,0.04
+Non Invasive Ventilators,"8,500.00",1,units,1,0.6
+powered air purifying respirators,"1,500.00",1,units,0.95,0.4
+Safety box,250.00,1,units,0.2,0.005
+Scrubs pants,50.00,1,units,0.2,0.005
+Scrubs tops,30.00,1,units,0.2,0.005
+Surface Disinfectant 1 Gallon,25.99,1,gal,0.2,0.05
+Syringes,25.99,100,units,1,0.05
+Triple packaging boxes,99.99,10,pack,1,1
+Wipes,99.95,400,pack,0.2,10
