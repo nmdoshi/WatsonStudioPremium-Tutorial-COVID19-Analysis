@@ -71,7 +71,7 @@ You will also need to download and unzip the files in [data folder](https://gith
 
 ![importProj](../images/Tutorial3-Step2-Importdata-files.png)
 
-    **Product.csv** - This file contains product information. the columns in the file as follows
+    Product.csv - This file contains product information. the columns in the file as follows
     Product - name of the products
     cost - cost to procure the products
     qty_per_unit - number of product in 1 unit
@@ -79,21 +79,21 @@ You will also need to download and unzip the files in [data folder](https://gith
     importanceFactor - importance with respect to pandemic
     required_qty_per_person - It is amount of product needed per patient/cases
 
-    __ProductAvailability.csv__ - These file contains product that is available for entire state to be distributed to the counties.
+    ProductAvailability.csv - These file contains product that is available for entire state to be distributed to the counties.
     Product - name of the products
     Availability - Qty of units available for that time period
 
-    __County.csv__ - This file is output from SPSS model where we are forecasting the number of potential cases for next 5 days
+    County.csv - This file is output from SPSS model where we are forecasting the number of potential cases for next 5 days
     County - name of the County
     forecasted_cases - no of forecasted new COVID cases
     forecasted_death - no of forecasted deaths
 
-    **CountyDemand.csv** - This is the data collected from various counties with respected to their requirement for various products
+    CountyDemand.csv - This is the data collected from various counties with respected to their requirement for various products
     County - name of the county
     product - name of the product
     demand - units of preoduct requested to be supplied
 
-    **AllocationParameters** - Budget allocated for the state
+    AllocationParameters - Budget allocated for the state
 
 * Next, import files into model builder by selecting the files. Click `Import`.
 ![importProj](../images/Tutorial3-Step2-importdataforopti.png)
