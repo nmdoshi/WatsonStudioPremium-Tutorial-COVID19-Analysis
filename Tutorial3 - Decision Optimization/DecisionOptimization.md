@@ -34,7 +34,7 @@ To complete this lab, you will need:
 . IBM Watson Machine Learning Service
 
 
-You will also need to download and unzip the files in [Part3](https://github.com/neravdoshi/DSBlog/tree/master/Part3)
+You will also need to download and unzip the files in [data folder](https://github.com/nmdoshi/WatsonStudio-Tutorial-COVID19-Analysis/tree/master/Tutorial3%20-%20Decision%20Optimization/data)
 
  We will be using decision optimization model builder for this tutorial. To learn more about model builder please click [here](https://www.ibm.com/support/producthub/icpdata/docs/content/SSQNUZ_current/do/DODS_Mdl_Assist/exhousebuildintro.html)
 
@@ -67,7 +67,8 @@ You will also need to download and unzip the files in [Part3](https://github.com
 * Click the `Find and add data`. icon on the top right side and click on `browse`.as shown below
 ![importProj](../images/Tutorial3-Step2-Preparedata.png)
 
-* Select all files and  Click `Open`. and import 5 input files required for building this model
+* Select all files and  Click `Open`. and import 5 input files required for building this model. The data can be found in [data](https://github.com/nmdoshi/WatsonStudio-Tutorial-COVID19-Analysis/tree/master/Tutorial3%20-%20Decision%20Optimization/data) folder of the github repo
+
 ![importProj](../images/Tutorial3-Step2-importdata-files.png)
     **Product.csv** - This file contains product information. the columns in the file as follows
     Product - name of the products
