@@ -70,6 +70,7 @@ You will also need to download and unzip the files in [data folder](https://gith
 * Select all files and  Click `Open`. and import 5 input files required for building this model. The data can be found in [data](https://github.com/nmdoshi/WatsonStudio-Tutorial-COVID19-Analysis/tree/master/Tutorial3%20-%20Decision%20Optimization/data) folder of the github repo
 
 ![importProj](../images/Tutorial3-Step2-Importdata-files.png)
+
     **Product.csv** - This file contains product information. the columns in the file as follows
     Product - name of the products
     cost - cost to procure the products
@@ -78,11 +79,11 @@ You will also need to download and unzip the files in [data folder](https://gith
     importanceFactor - importance with respect to pandemic
     required_qty_per_person - It is amount of product needed per patient/cases
 
-    **ProductAvailability.csv** - These file contains product that is available for entire state to be distributed to the counties.
+    __ProductAvailability.csv__ - These file contains product that is available for entire state to be distributed to the counties.
     Product - name of the products
     Availability - Qty of units available for that time period
 
-    **County.csv** - This file is output from SPSS model where we are forecasting the number of potential cases for next 5 days
+    __County.csv__ - This file is output from SPSS model where we are forecasting the number of potential cases for next 5 days
     County - name of the County
     forecasted_cases - no of forecasted new COVID cases
     forecasted_death - no of forecasted deaths
@@ -206,7 +207,7 @@ You should see the following Dashboard
   * Click the three dots next to one of your scenarios and select `Generate` notebook.
   * Enter a name for your notebook and click Generate.
   * A Python notebook for this model is created in your Project.
-  
+
 ![notebook_generation](../images/Tutorial3-Step9-generate-notebook.png)
 
 ### Summary
