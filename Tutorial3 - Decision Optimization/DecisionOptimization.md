@@ -59,7 +59,7 @@ You will also need to download and unzip the files in [data folder](https://gith
 
 9. [Generating a Python notebook from your scenario](#9-generating-a-python-notebook-from-your-scenario)
 
-10.[Additional examples for different domains](#10-additional-examples-for-different-domains)
+10. [Additional examples for different domains](#10-additional-examples-for-different-domains)
 
 ### 1. Add a Decision Optimization to your Watson Studio Project
 
