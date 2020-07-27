@@ -17,10 +17,9 @@ Completing this tutorial should take about 30 minutes.
 
 1. [Add a Modeler Flow to your Watson Studio Project](#1-Add-a-modeler-flow-to-your-watson-studio-project)
 2. [Import the data](#2-import-the-data)
-3. [Explore the data](#3-explore-the-data)
-4. [Data preparation](#4-data-exploration)
-5. [Train the ML model](#5-Train-the-ML-model)
-6. [Evaluate the results ](#6-Evaluate-the-results)
+3. [Data preparation](#4-data-exploration)
+4. [Train the ML model](#5-Train-the-ML-model)
+5. [Evaluate the results ](#6-Evaluate-the-results)
 
 ### 1. Add a Modeler Flow to your Watson Studio Project
 
@@ -28,50 +27,28 @@ Completing this tutorial should take about 30 minutes.
 
 * Once you have created your Watson Studio Project, you see a blue `Add to Project` button on the top-right corner of your screen.
 
-![addProj](../images/addProj.png)
+![addProj](../images/Tutorial2-Step1-Addtoproject.png)
 
-* Click on `Add to Project` and then select `Modeler Flow`.
+* Click the `Modeler Flow`.
 
-![addProj](../images/modelerFlow.png)
+![addProj](../images/Tutorial2-Step1-modelerFlow.png)
 
-* Next, select `From File` and `browse` to where you cloned this repository. Select the `Demand Forecast.str` file. Next, click `Create`.
+* Next, select `From File` and `browse` to where you cloned this repository. Select the `COVID_forecast.str` file. Next, click `Create`.
 
-![addProj](../images/newFlow.png)
+![addProj](../images/Tutorial2-Step1-newFlow.png)
 
 ### 2. Import the data
 
-* SPSS Modeler will then ask you to migrate nodes. Click on `Yes`.
+* Right-click the first node which says `us-counties_shaped.csv`. Click `Open`
 
-![addProj](../images/migrate.png)
+![addProj](../images/Tutorial2-Step2-Open.png)
 
-* For the import node, click on `Data Assets` and then choose the `us_counties_shaped.csv` file, which contains our COVID data from our part1. Next, click `OK`.
+* Click the `Data Assets` and then choose the `us_counties_shaped.csv` file, which contains our COVID data from our part1. Next, click `OK`. Click `Save` on the right side of node pane
 
 ![addProj](../images/import.png)
 
 
-### 3. Explore the data
-
-Before we do any analysis and predictions on the data, it's
-a good idea to explore your data set.
-
-* From the `Data Import` node, hover over the node and
-click on the three-dot symbol to the right of the node. Next,
-click on `Profile`.
-
-![addProj](../images/profile.png)
-
-* Once the node loads, you will see a preview of the data set.
-Click on `Profile` from the top of the screen to see
-some graphs which show the frequency of the values for the
-features in your data set.
-
-![addProj](../images/profile2.png)
-
-
-* Once you are done exploring the data set, you can return back to the flow
-by clicking on the flow name in the top-left breadcrumb.
-
-### 4. Data preparation
+### 3. Data preparation
 Next, we will focus on the data prep nodes. These are the nodes
 which will modify our data set to predict just the values we want. A great way to understand what each node is
 doing is to `Preview` the node.
@@ -111,21 +88,20 @@ for each of our products within that column.
 ![addProj](../images/type.png)
 
 
-### 5. Train the ML model
+### 4. Train the ML model
 
 * Right-click over the `cases & death` green nugget and then click `Open`.
 This will run the time-forecasting model with the data we have
 prepared in the previous steps. In the Model section select 5 days as we need to forecast for 5 days from the historic last date
 
-![addProj](../images/runModel.png)
+![trainProj](../images/runModel.png)
 
-* Once the model
-has finished running, you will see the Outputs tab has been
-updated.
+* Click run button Once the model has finished running, you will see the Outputs tab has been updated.
 
-![addProj](../images/outputs.png)
+![trainProj](../images/Tutorial2-Step4-runModelflow.png)
+![trainProj](../images/Tutorial2-Step4-output.png)
 
-### 6. Evaluate the results
+### 5. Evaluate the results
 
 * Double-click on `County vs $TS-cases` in the Outputs tab.
 You can see project number of cases by counties for next 5 days is ploted. This is based on historical recorded training period i.e. 2020 daily data.

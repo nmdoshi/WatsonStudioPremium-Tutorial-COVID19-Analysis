@@ -205,6 +205,8 @@ You should see the following Dashboard
   * Click the three dots next to one of your scenarios and select `Generate` notebook.
   * Enter a name for your notebook and click Generate.
   * A Python notebook for this model is created in your Project.
+  
+![notebook_generation](../images/Tutorial3-Step9-generate-notebook.png)
 
 ### Summary
 
