@@ -17,9 +17,9 @@ This tutorial assumes you have an IBM Cloud account. Go to the link below to sig
 
 ## Tutorials
 
-### Part1 - Data collection and Understanding
-### Part2 - SPSS stream creation and predicting PPE equipment requirement
-### Part3 - Decision Optimization model creation and provide supply demand recommendation
+### Tutorial1 - Data collection and Understanding
+### Tutorial2 - SPSS stream creation and predicting PPE equipment requirement
+### Tutorial3 - Decision Optimization model creation and provide supply demand recommendation
 
 Completing this tutorial should take about 60 minutes.
 
