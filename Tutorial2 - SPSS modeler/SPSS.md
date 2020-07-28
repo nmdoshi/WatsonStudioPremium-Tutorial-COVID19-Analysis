@@ -56,8 +56,10 @@ doing is to `Preview` the node.
 
 ![addProj](../images/threeDot.png)
 
-* Next, click on `Preview`. This is a quick and easy way to see what the data looks like at the current node in the flow. You can see all the added columns from data refinery tutorial
+* Next, click on `Preview`. This is a quick and easy way to see what the data looks like at the current node in the flow. You can see all the added columns from data refinery tutorial.
+
 ![addProj](../images/preview1.png)
+
 ![addProj](../images/preview.png)
 
 * Next, the `Select` node is very important. It's going to take a subset of the data, and it will use an expression to do so. You can
@@ -67,13 +69,13 @@ see in the expression, we have only taken the `Michigan` state counties.
 
 * The last of the data prep nodes is the `Type` node.  Here you can specify field properties. This enables us to make specific operations on the fields within our data set. Some of the properties that are available under this node are
 
-Field. Specify value and field labels for data in Watson Studio. For example, field metadata imported from a data asset can be viewed or modified here.
+**Field** - Specify value and field labels for data in Watson Studio. For example, field metadata imported from a data asset can be viewed or modified here.
 
-Measure. This is the measurement level, used to describe characteristics of the data in a given field. For more information, see [Measurement levels.](https://www.ibm.com/support/knowledgecenter/SS3RA7_18.1.1/modeler_mainhelp_client_ddita/clementine/typenode_kindsoftypes.html#typenode_kindsoftypes)
+**Measure** - This is the measurement level, used to describe characteristics of the data in a given field. For more information, see [Measurement levels.](https://www.ibm.com/support/knowledgecenter/SS3RA7_18.1.1/modeler_mainhelp_client_ddita/clementine/typenode_kindsoftypes.html#typenode_kindsoftypes)
 
-Role. Used to tell modeling nodes whether fields will be Input (predictor fields) or Target (predicted fields) for a machine-learning process. Both and None are also available roles, along with Partition, which indicates a field used to partition records into separate samples for training, testing, and validation. The value *Split* specifies that separate models will be built for each possible value of the field. Here we split the Counties column into individual values, so that we can later predict cases for each of our counties within that column. Other columns are Inputs to the model. Select the `Split` from dropdown menu for `Counties`
+**Role** - Used to tell modeling nodes whether fields will be Input (predictor fields) or Target (predicted fields) for a machine-learning process. Both and None are also available roles, along with Partition, which indicates a field used to partition records into separate samples for training, testing, and validation. The value *Split* specifies that separate models will be built for each possible value of the field. Here we split the Counties column into individual values, so that we can later predict cases for each of our counties within that column. Other columns are Inputs to the model. Select the `Split` from dropdown menu for `Counties`
 
-Values This column enables you to specify options for reading data values from the data set.
+**Values** - This column enables you to specify options for reading data values from the data set.
 
 ![addProj](../images/type.png)
 
