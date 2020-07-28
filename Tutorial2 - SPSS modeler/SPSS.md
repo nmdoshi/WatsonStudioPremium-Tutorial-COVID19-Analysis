@@ -1,6 +1,5 @@
-# Use SPSS Modeler to predict PPE equipment based on COVID-19 data for Michigan counties
-In this part of the solution, we will work on predicting future demand of PPE products to help us determine inventory level using SPSS Modeler for Watson Studio on IBM Cloud. SPSS Modeler is a data mining and analytics software
-that is used to build predictive models. Using SPSS Modeler for Watson Studio enables data scientists and data analysts to work in a collaborative, cloud-based environment and quickly share their models and results with
+# Use SPSS Modeler to predict COVID19 cases and deaths for Michigan counties to better plan for Personal Protective Equipement (PPE)
+In this part of the solution, we will work on predicting future COVID19 cases and deaths to plan for demand of PPE products to help us determine inventory level. We will be using SPSS Modeler for Watson Studio on IBM Cloud. SPSS Modeler is a data mining and analytics software that is used to build predictive models. Using SPSS Modeler for Watson Studio enables data scientists and data analysts to work in a collaborative, cloud-based environment and quickly share their models and results with
 their stakeholders.
 
 ## Learning objectives
@@ -57,24 +56,9 @@ doing is to `Preview` the node.
 
 ![addProj](../images/threeDot.png)
 
-* Next, click on `Preview`.
+* Next, click on `Preview`. This is a quick and easy way to see what the data looks like at the current node in the flow. You can see all the added columns from data refinery tutorial
 
 ![addProj](../images/preview.png)
-
-* This is a quick and easy way to see what the data looks like at the current node in the flow. Below is what you should see
-once you've previewed the node.
-
-![addProj](../images/dataPreview.png)
-
-* Hover over the `Date` node, click on the `Three-dot` symbol,
-and then on `Preview`.
-
-* Once you preview the node, you should see that the Date node adds another column to the data set, called
-`Date` and derives that value from the `Reported_Date` column.
-
-![addProj](../images/date.png)
-
-*
 
 * Next, the `Select` node is very important. It's going to take a subset of the data, and it will use an expression to do so. You can
 see in the expression, we have only taken the `Michigan` state counties.
