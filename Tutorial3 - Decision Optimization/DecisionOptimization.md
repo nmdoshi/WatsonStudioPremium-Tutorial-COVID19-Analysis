@@ -190,7 +190,7 @@ Create a new scenario in the model from scenario 1. Click the Scenario button on
 ![newscenario](../images/Tutorial3-Step7-duplicate-scenario-name.png)
 
 
-* Click Run Model on left-hand side and it will show the modeling assistant model. In the suggestions type `Maximize total importanceFactor of product of CountyDemand of allocation ` Click the `+` icon to add the objective to the model. You can use the slider to give this objective  more importance.
+* Click Run Model on left-hand side and it will show the modeling assistant model. In the suggestions type `Maximize total importanceFactor of product of allocation`. You will see the `Maximize total importanceFactor of product of CountyDemands over all allocations` objective in the suggestion. Click the `+` icon to add the objective to the model. You can use the slider to give this objective  more importance.
 
 ![newscenario](../images/Tutorial3-Step7-importance-objective.png)
 ![newscenario](../images/Tutorial3-Step7-importance-objective-slider.png)
